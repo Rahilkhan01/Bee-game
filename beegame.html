@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var sc=0;
+        function fun1()
+        {
+            sc++;
+        document.getElementById("div1").innerHTML="Score:" +sc;    
+        }
+       
+        function fun2()
+        {
+            var a=Math.random()*700;
+            var b=Math.random()*500;
+            document.getElementById("img1").style.left=a +"px";
+            document.getElementById("img1").style.top=b +"px";
+        }
+        setInterval("fun2()",1000);
+        
+        
+        function fun3()
+        {
+            sc++;
+        document.getElementById("div1").innerHTML="Score:" +sc;    
+        }
+        function fun3()
+        {
+            var a=Math.random()*700;
+            var b=Math.random()*500;
+            document.getElementById("img2").style.left=a +"px";
+            document.getElementById("img2").style.top=b +"px";
+        }
+        setInterval("fun3()",1000);
+    </script>
+</head>
+<body style="background-image:url('https://cdn.pixabay.com/photo/2018/01/12/14/24/night-3078326_1280.jpg');background-size:cover;">
+    <div id="div1" style="font-size:20px; color: white;font-weight:bold">Score:0</div>
+        <img id="img1" src="bee.png" onclick="fun1()" style="width:100px; position:absolute"/>
+        <img id="img2" src="bee.png" onclick="fun3()" style="width:100px; position:absolute"/>
+</body>
+</html>
